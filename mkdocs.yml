@@ -19,7 +19,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   logo: assets/NeoLAT/NeoLAT_logo.png
-  favicon: assets/NeoLAT/NeoLAT_favicon.ico
+  favicon: assets/NeoLAT/NeoLAT_favicon.png
 
 extra_css:
   - stylesheets/extra.css
