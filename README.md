@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/assets/NeoLAT/NeoLAT_banner_transparent.png" alt="neoLAT - Local Agentic AI Testbed" width="100%">
+  <img src="docs/assets/NeoLAT/NeoLAT_banner.jpeg" alt="neoLAT - Local Agentic AI Testbed" width="100%">
   
   <p>
     <a href="https://github.com/neomakes/neolat/actions"><img src="https://img.shields.io/github/actions/workflow/status/neomakes/neolat/ci.yml?branch=main&label=build&style=for-the-badge" alt="Build Status"></a>
