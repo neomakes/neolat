@@ -1,0 +1,36 @@
+/* Custom header gradient */
+.md-header {
+  background-color: #000000; /* Fallback */
+  background: linear-gradient(to right, #000000, #2ad4f5);
+}
+
+/* Ensure tabs (if present) blend well or stand out */
+.md-tabs {
+  background-color: #000000; /* Match start of gradient */
+}
+
+/* Fix vertical alignment for logo and title and reduce spacing */
+.md-header__title,
+.md-header__topic,
+.md-header__ellipsis {
+  display: flex !important;
+  align-items: center !important;
+  height: 100%;
+}
+
+.md-header__title {
+  margin-left: -0.5rem !important; /* Reduce gap between logo and name */
+}
+
+/* Replace header site title text with image */
+.md-header__title > .md-header__ellipsis > .md-header__topic > .md-ellipsis {
+  color: transparent; /* Hide the text */
+  background-image: url("../assets/NeoLAT/NeoLAT_name_bgrmvd.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  background-position: left center;
+  display: block; /* Better for flex child */
+  width: 4.5rem; /* Further reduced (approx 80% of previous 5.6rem) */
+  height: 1.45rem; /* Further reduced (approx 80% of previous 1.8rem) */
+}

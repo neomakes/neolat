@@ -1,6 +1,6 @@
 # Introduction to neoLAT
 
-**neoLAT** (Local Agentic AI Testbed) is a comprehensive environment for evaluating local AI agents.
+**NeoLAT** (Local Agentic AI Testbed) is a comprehensive environment for evaluating local AI agents.
 
 ## Goals
 

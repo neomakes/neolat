@@ -1,4 +1,4 @@
-site_name: Local Agentic AI Testbed
+site_name: NeoLAT
 theme:
   name: material
   features:
@@ -7,17 +7,22 @@ theme:
     - content.code.copy
   palette:
     - scheme: default
-      primary: teal
-      accent: purple
+      primary: skyblue
+      accent: pink
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: teal
-      accent: purple
+      primary: skyblue
+      accent: pink
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  logo: assets/NeoLAT/NeoLAT_logo.png
+  favicon: assets/NeoLAT/NeoLAT_favicon.ico
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Introduction: index.md
@@ -31,7 +36,7 @@ nav:
 # Copyright & Footer Customization
 copyright: |
   <div style="display: flex; align-items: center; gap: 15px;">
-    <img src="/assets/neomakes_logo.png" alt="NeoMakes Logo" style="height: 2.5em;">
+    <img src="/assets/NeoLAT/neomakes_logo.png" alt="NeoMakes Logo" style="height: 2.5em;">
     <div style="line-height: 1.3;">
       <a href="https://neomakes.com" target="_blank" style="font-size: 1.3em; font-weight: bold; color: inherit; text-decoration: none;">NeoMakes, Inc.</a><br>
       <span style="font-size: 0.9em;">Copyright &copy; 2026, NeoMakes, Inc.</span>
