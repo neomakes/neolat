@@ -36,10 +36,12 @@ nav:
 # Copyright & Footer Customization
 copyright: |
   <div style="display: flex; align-items: center; gap: 15px;">
-    <img src="/assets/NeoLAT/neomakes_logo.png" alt="NeoMakes Logo" style="height: 2.5em;">
-    <div style="line-height: 1.3;">
-      <a href="https://neomakes.com" target="_blank" style="font-size: 1.3em; font-weight: bold; color: inherit; text-decoration: none;">NeoMakes, Inc.</a><br>
-      <span style="font-size: 0.9em;">Copyright &copy; 2026, NeoMakes, Inc.</span>
+    <a href="https://neomakes.com" target="_blank" style="display: flex; text-decoration: none;">
+      <img src="/assets/NeoLAT/neomakes_logo.png" alt="NeoMakes Logo" class="neomakes-logo" style="height: 2.5em;">
+    </a>
+    <div class="neomakes-copyright-container" style="line-height: 1.3;">
+      <a href="https://neomakes.com" target="_blank" style="font-size: 1.3em; font-weight: bold; color: inherit; text-decoration: none;">NeoMakes</a><br>
+      <span class="neomakes-copyright-text" style="font-size: 0.9em;">Copyright &copy; 2026, NeoMakes, Inc.</span>
     </div>
   </div>
 

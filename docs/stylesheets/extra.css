@@ -22,8 +22,11 @@
   margin-left: -0.5rem !important; /* Reduce gap between logo and name */
 }
 
-/* Replace header site title text with image */
-.md-header__title > .md-header__ellipsis > .md-header__topic > .md-ellipsis {
+/* Replace header site title text with image - Target ONLY the Site Title (first topic) */
+.md-header__title
+  > .md-header__ellipsis
+  > .md-header__topic:first-child
+  > .md-ellipsis {
   color: transparent; /* Hide the text */
   background-image: url("../assets/NeoLAT/NeoLAT_name_bgrmvd.png");
   background-repeat: no-repeat;
@@ -33,4 +36,71 @@
   display: block; /* Better for flex child */
   width: 4.5rem; /* Further reduced (approx 80% of previous 5.6rem) */
   height: 1.45rem; /* Further reduced (approx 80% of previous 1.8rem) */
+  cursor: pointer; /* Require click interaction */
+}
+
+/* Prevent the Site Title from fading out on scroll */
+.md-header__title > .md-header__ellipsis > .md-header__topic:first-child {
+  opacity: 1 !important;
+  transform: none !important; /* Prevent movement */
+}
+
+/* Hide the Page Title (second topic) that normally appears on scroll */
+.md-header__title > .md-header__ellipsis > .md-header__topic:nth-child(2) {
+  display: none !important;
+}
+
+/* Fixed Footer */
+.md-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 20; /* Keep consistent with header z-index */
+  background-color: var(--md-footer-bg-color);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+/* Adjust padding to prevent content from being hidden behind the fixed footer */
+/* We add extra padding to the bottom of the main content area */
+.md-main__inner {
+  padding-bottom: 12rem; /* Estimated height of footer (nav + meta) + spacing */
+}
+
+/* Ensure the footer content is opaque and readable */
+.md-footer__inner,
+.md-footer-meta {
+  background-color: var(--md-footer-bg-color);
+  transition: padding 0.3s ease; /* Smooth transition for padding changes */
+}
+
+/* COMPACT FOOTER STATE
+   Applied when the user is scrolling (body does NOT have 'scrolled-to-bottom' class).
+*/
+
+/* 1. Hide the Copyright Text Details (keep company name visible) */
+body:not(.scrolled-to-bottom) .neomakes-copyright-text {
+  display: none !important;
+}
+
+/* 2. Hide the 'Made with' text */
+body:not(.scrolled-to-bottom) .made-with-custom {
+  display: none !important;
+  opacity: 0 !important; /* Double ensure visibility is gone */
+  pointer-events: none !important;
+}
+
+/* 3. Shrink the Logo (using explicit class) */
+body:not(.scrolled-to-bottom) .neomakes-logo {
+  height: 1.5em !important; /* Reduced height */
+  transition: height 0.3s ease;
+}
+
+/* 4. Reduce Footer Vertical Padding */
+body:not(.scrolled-to-bottom) .md-footer-meta {
+  padding: 0.2rem 0 !important; /* Very compact padding */
+}
+
+/* Default state transitions (when expanding back) */
+.neomakes-logo {
+  transition: height 0.3s ease;
 }

@@ -82,4 +82,41 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }, 100); // Small delay to ensure elements are rendered
     }
+
+    // Scroll Detection for Sticky Footer State
+    function handleScroll() {
+        // Use document.documentElement.scrollHeight for total content height
+        var totalHeight = document.documentElement.scrollHeight;
+        var scrollPosition = window.scrollY + window.innerHeight;
+        var threshold = 50; // pixels from bottom
+
+        var isAtBottom = scrollPosition >= (totalHeight - threshold);
+
+        if (isAtBottom) {
+            document.body.classList.add('scrolled-to-bottom');
+        } else {
+            document.body.classList.remove('scrolled-to-bottom');
+        }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll); // Also check on resize
+    // Initial check
+    setTimeout(handleScroll, 200); // Check after a slight delay for content load
+
+    // Header Title Click Handling - Redirect to Home
+    var headerTitle = document.querySelector('.md-header__title');
+    if (headerTitle) {
+        headerTitle.addEventListener('click', function() {
+            // Try to find the logo link to get the correct home URL
+            var logoLink = document.querySelector('.md-header__button.md-logo');
+            if (logoLink && logoLink.href) {
+                window.location.href = logoLink.href;
+            } else {
+                // Fallback to root
+                window.location.href = './'; 
+            }
+        });
+    }
 });
+
