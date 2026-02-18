@@ -1,6 +1,7 @@
 site_name: NeoLAT
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.sections
     - navigation.expand
