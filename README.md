@@ -6,6 +6,10 @@
     <a href="https://github.com/neomakes/neolat/releases"><img src="https://img.shields.io/github/v/release/neomakes/neolat?style=for-the-badge&color=blue" alt="Version"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="License"></a>
   </p>
+
+  <p>
+    <strong>📚 Documentation: <a href="https://neomakes.github.io/neolat">neomakes.github.io/neolat</a></strong>
+  </p>
 </div>
 
 **NeoLAT** is a specialized testbed designed for evaluating and experimenting with Local Agentic AI systems. It provides a robust environment for comparing performance across different local inference engines (MLX-based PyTorch, Ollama) and testing cognitive capabilities on tasks like Sudoku, ARC-1, and ARC-2.
