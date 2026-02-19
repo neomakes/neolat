@@ -2,7 +2,7 @@ site_name: NeoLAT
 site_url: https://neomakes.github.io/neolat/
 theme:
   name: material
-  custom_dir: overrides
+  custom_dir: docs/assets/overrides
   features:
     - navigation.sections
     - navigation.expand
