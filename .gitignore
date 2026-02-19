@@ -24,3 +24,6 @@ dist/
 # Documentation artifacts
 site/
 reference/
+
+# Experiments
+toy_experiment/
