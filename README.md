@@ -14,11 +14,11 @@
 
 **NeoLAT** is a specialized testbed designed for evaluating and experimenting with Local Agentic AI systems. It provides a robust environment for comparing performance across different local inference engines (MLX-based PyTorch, Ollama) and testing cognitive capabilities on tasks like Sudoku, ARC-1, and ARC-2.
 
-## Mission: Bridging the Gap for Mission-Critical Local AI
+## 1. 🌟 Mission: Bridging the Gap for Mission-Critical Local AI
 
 NeoLAT is not just a testbed; it’s a crucible for the next generation of AI agents that must operate where the cloud cannot reach. We focus on safety, speed, and local autonomy for environments where failure is not an option.
 
-## 🚀 Key Features
+## 2. 🚀 Key Features
 
 - **Local Inference Focus**: Optimized for running powerful models locally on Apple Silicon (via MLX) and other platforms.
 - **Modular Architecture**: Clean separation of agents, environments, analysis tools, and core logic.
@@ -26,7 +26,7 @@ NeoLAT is not just a testbed; it’s a crucible for the next generation of AI ag
 - **Cognitive Benchmarks**: Includes environments for testing high-level reasoning and problem-solving skills.
 - **Documentation First**: Built with extensive MkDocs integration for clear and accessible documentation.
 
-## 📂 Directory Structure
+## 3. 📂 Directory Structure
 
 ```plaintext
 neolat/
@@ -44,7 +44,7 @@ neolat/
 └── requirements.txt        # Python dependencies
 ```
 
-## 🛠️ Installation & Setup
+## 4. 🛠️ Installation & Setup
 
 ### Prerequisites
 
@@ -73,7 +73,7 @@ neolat/
     conda activate neolat
     ```
 
-## 📖 Usage
+## 5. 📖 Usage
 
 ### Running Documentation
 
@@ -85,13 +85,7 @@ mkdocs serve
 
 Then navigate to `http://127.0.0.1:8000` in your browser.
 
-### Running Experiments
-
-(Instructions for running specific experiments will be added as the framework evolves. Check `experiments/` for available configurations.)
-
-## 🤝 Contributing
-
-## 🤝 Contributing
+## 6. 🤝 Contributing
 
 We are looking for engineers who want to push the boundaries of Local AI. By contributing to NeoLAT, you will:
 - **Master On-Device Optimization**: Gain rare expertise in MLX, quantization, and local inference.
@@ -100,7 +94,7 @@ We are looking for engineers who want to push the boundaries of Local AI. By con
 
 Join us in defining the standard for reliable, local agentic intelligence.
 
-## 📄 License & Copyright
+## 7. 📄 License & Copyright
 
 ### Source Code
 
